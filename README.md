@@ -1,5 +1,5 @@
 # GSM
-Проект по полному переносу аудиоконтента из World of Tanks и Мир Танков в Tanks Blitz. Основа GSM основана на WoT 1.0 с добавлением контента из новых версий, если таковой не существует в 1.0, но требуется для замены звуков.
+Проект по полному переносу аудиоконтента из World of Tanks и Мир Танков в Tanks Blitz. Основа GSM основана на WoT 1.0 с добавлением контента из новых версий, если таковой не существует в 1.0, но требуется для замены звуков. Поддерживается только на клиенте Tanks Blitz (Lesta).
 
 -----------------------------  
 
@@ -7,6 +7,7 @@
 - Отличное качество звука.
 - Полностью оригинальные настройки громкости и иеархия Wwise прямо из World of Tanks.
 - Продвинутая музыкальная система.
+- Звуки выстрелов с расширенной сеткой калибров.
 - Боевая музыка состоит из отдельных партий, которые случайно миксуются между собой. Каждая сыгранная боевая тема уникальна.
 - Почти полная замена звуков.
 - Реверберация и ранние отражения.
@@ -54,6 +55,31 @@
 - Музыка в ангаре
   - Генеративная музыка в ангаре
   - Генеративная музыка на вкладках в ангаре
+
+### Установка
+ПК:
+- Скопируйте папку Data в папку установки игры/Tanks_Blitz (C:/Games/Tanks_Blitz/).
+- Скопируйте папку TanksBlitz в папку Документы (C:/Users/%USERNAME%/Documents/)
+
+Android:
+- Установите [Tanks Blitz: Forblitz Edition](https://github.com/ForBlitzTB/Tanks-Blitz-ForBlitz-Edition) и [ForBlitz](https://forblitz.ru/download-application)
+- Включите в ForBlitz параметр externalmods
+- Скопируйте содержимое папки Data из архива в /storage/emulated/0/Android/media/ru.forblitz/externalmods/
+
+# GSM Lite
+Облегченная версия. Содержит только саундбанки, без дополнительных конфигов, благодаря чему поддерживается на всех клиентах, не требует частых обновлений и не вызывает критических ошибок. Отключены музыкальная система, расширенная сетка калибров, звуки поверхности под гусеницами (кроме камня).
+
+### Установка
+ПК:
+- Скопируйте папку Data в папку установки игры/Tanks_Blitz (C:/Games/Tanks_Blitz/).
+
+Android (Tanks Blitz/WoT Blitz):
+- Скопируйте содержимое папки Data из архива в /storage/emulated/0/Android/data/com.tanksblitz(net.wargaming.wot.blitz)/files/packs/
+
+Android (Tanks Blitz: Forblitz Edition):
+- Установите [Tanks Blitz: Forblitz Edition](https://github.com/ForBlitzTB/Tanks-Blitz-ForBlitz-Edition) и [ForBlitz](https://forblitz.ru/download-application)
+- Включите в ForBlitz параметр externalmods
+- Скопируйте содержимое папки Data из архива в /storage/emulated/0/Android/media/ru.forblitz/externalmods/
 
 ### Инструменты, использующиеся при разработке:
 - [wwiser](https://github.com/bnnm/wwiser) - парсинг банков `.bnk` оригинальной игры, восстановление иеархий из банка в проект Wwise.
